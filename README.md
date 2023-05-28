@@ -1,7 +1,32 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# Assignment INTRODUCTION TO PYTHON FOR MACHINE LEARNING GRADED QUIZ
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+This repository contains the code for the assignment on Introduction to Python for Machine Learning. The assignment is based on a dataset provided by the Food and Agriculture Organization of the United Nations.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+## Dataset
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+The dataset is available in CSV format and can be accessed from the following GitHub link: [Food and Agriculture Organization Dataset](https://github.com/HamoyeHQ/HDSC-Introduction-to-Python-for-machine-learning)
+
+The dataset contains the following features:
+
+- Area Code
+- Area
+- Item Code
+- Item
+- Element Code
+- Element
+- Unit
+- Y2014
+- Y2015
+- Y2016
+- Y2017
+- Y2018
+
+## Loading the Dataset
+
+To correctly read the dataset for the quiz, I ensured to specify the encoding value as "latin-1". Here's an example of how I loaded the dataset with the appropriate encoding in my code:
+
+```python
+import pandas as pd
+
+# Load the dataset
+dataset = pd.read_csv('dataset.csv', encoding='latin-1')
